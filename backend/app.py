@@ -7,7 +7,7 @@ from flask_cors import CORS
 base_dir = os.path.dirname(os.path.abspath(__file__))
 load_dotenv(os.path.join(base_dir, ".env"))
 
-from db.database import init_db
+from backend.db.database import init_db
 
 init_db()
 
