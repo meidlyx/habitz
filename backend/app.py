@@ -1,14 +1,21 @@
 import os
+import sys
+
+backend_dir = os.path.dirname(os.path.abspath(__file__))
+if backend_dir not in sys.path:
+    sys.path.insert(0, backend_dir)
 
 from dotenv import load_dotenv
 from flask import Flask, send_from_directory
 from flask_cors import CORS
 
-base_dir = os.path.dirname(os.path.abspath(__file__))
-load_dotenv(os.path.join(base_dir, ".env"))
+load_dotenv(os.path.join(backend_dir, ".env"))
+
+app = Flask(__name__, static_folder="../frontend")
+CORS(app)
+app.config["JSON_AS_ASCII"] = False
 
 from backend.db.database import init_db
-
 init_db()
 
 from routes.achievements import achievements_bp
@@ -16,11 +23,6 @@ from routes.auth import auth_bp
 from routes.habits import habits_bp
 from routes.profile import profile_bp
 from routes.tasks import tasks_bp
-
-app = Flask(__name__, static_folder="../frontend")
-CORS(app)
-
-app.config["JSON_AS_ASCII"] = False
 
 #! Регистрация всех Blueprints
 app.register_blueprint(auth_bp, url_prefix="/api/auth")
