@@ -1,0 +1,110 @@
+@import url("fonts.css");
+
+:root {
+  /* Фоны */
+  --bg: #000000;
+  --bg-secondary: #0a0a0a;
+  --surface: #1c1c1e;
+  --surface2: #2c2c2e;
+  --nav-bg: #111111;
+
+  /* Текст */
+  --text: #ffffff;
+  --text-secondary: #8e8e93;
+  --text-muted: #636366;
+
+  /* Акцент */
+  --accent: #0a84ff;
+  --accent-hover: #409cff;
+  --accent-soft: rgba(10, 132, 255, 0.15);
+
+  /* Статусы */
+  --success: #30d158;
+  --error: #ff453a;
+  --warning: #ff9f0a;
+  --info: #64d2ff;
+  --reward: #ffd60a;
+
+  /* Геймификация */
+  --xp-color: #0a84ff;
+  --streak-color: #ff9f0a;
+  --achievement-color: #ffd60a;
+  --freeze-color: #64d2ff;
+  --boost-color: #ff9f0a;
+
+  /* Границы */
+  --border: #2f2f32;
+  --divider: #3a3a3c;
+  --card-hover: #242426;
+
+  /* Прогресс */
+  --progress-track: #2c2c2e;
+  --checkbox-inactive: #3a3a3c;
+  --checkbox-active: #0a84ff;
+  --checkbox-done: #30d158;
+
+  /* Навигация */
+  --nav-active: #0a84ff;
+  --nav-inactive: #8e8e93;
+
+  /* Вкладки */
+  --tab-profile: #ff5555;
+  --tab-tasks: #ffff65;
+
+  /* Радиус */
+  --radius: 16px;
+  --radius-sm: 10px;
+  --radius-xs: 8px;
+
+  /* Шрифты */
+  --font-main: "SFProText", -apple-system, sans-serif;
+  --font-title: "Benzin", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-main);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: var(--font-main);
+}
+
+input,
+textarea {
+  font-family: var(--font-main);
+  outline: none;
+  border: none;
+  background: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-title);
+}
+
+.hidden {
+  display: none !important;
+}

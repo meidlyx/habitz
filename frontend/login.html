@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Habitz — Вход</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/components/login.css" />
+  </head>
+  <body>
+    <div class="login-wrapper">
+      <div class="login-logo">
+        <h1>Habitz</h1>
+        <p>Управляй привычками. Расти каждый день.</p>
+      </div>
+
+      <div class="login-tabs">
+        <button class="tab-btn active" id="tab-login">Вход</button>
+        <button class="tab-btn" id="tab-register">Регистрация</button>
+      </div>
+
+      <div class="login-form" id="form-login">
+        <input type="email" id="login-email" placeholder="Email" />
+        <input type="password" id="login-password" placeholder="Пароль" />
+        <p class="form-error" id="login-error"></p>
+        <button class="btn-primary" id="btn-login">Войти</button>
+      </div>
+
+      <div class="login-form hidden" id="form-register">
+        <input type="text" id="reg-name" placeholder="Имя" />
+        <input type="email" id="reg-email" placeholder="Email" />
+        <input type="password" id="reg-password" placeholder="Пароль" />
+        <p class="form-error" id="reg-error"></p>
+        <button class="btn-primary" id="btn-register">Создать аккаунт</button>
+      </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+  </body>
+</html>

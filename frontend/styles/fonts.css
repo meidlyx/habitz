@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "SFProText";
+  src: url("fonts/SF-Pro-Display-Regular.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SFProText";
+  src: url("fonts/SF-Pro-Display-Medium.otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SFProText";
+  src: url("fonts/SF-Pro-Display-Bold.otf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Benzin";
+  src: url("fonts/Benzin-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Benzin";
+  src: url("fonts/Benzin-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Benzin";
+  src: url("fonts/Benzin-ExtraBold.ttf");
+  font-weight: 800;
+}

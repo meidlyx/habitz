@@ -1,0 +1,80 @@
+/* ДОСТИЖЕНИЯ */
+.ach-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.ach-filter {
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.ach-filter.active {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.ach-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ach-item.locked {
+  opacity: 0.5;
+}
+
+.ach-icon {
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.ach-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.ach-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.ach-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+}
+
+.ach-bar-track {
+  height: 4px;
+  background: var(--progress-track);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.ach-bar-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+.ach-progress {
+  font-size: 13px;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+  font-family: var(--font-main);
+}
